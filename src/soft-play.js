@@ -29,7 +29,12 @@ function enter(numAdults, numChildren) {
 }
 
 function leave(numAdults, numChildren) {
-  if (numAdults >= numChildren && numAdults <= adults && numChildren <= children && (adults - numAdults) >= (children - numChildren)) {
+  if (
+    numAdults >= numChildren &&
+    numAdults <= adults &&
+    numChildren <= children &&
+    adults - numAdults >= children - numChildren
+  ) {
     adults -= numAdults
     children -= numChildren
     return true

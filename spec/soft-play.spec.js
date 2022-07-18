@@ -1,4 +1,4 @@
-const {enter, leave, occupancy, reset, total} = require('../src/soft-play.js')
+const {enter, leave, occupancy, reset} = require('../src/soft-play.js')
 
 describe("Soft Play", () => {  
   
